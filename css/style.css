@@ -1,0 +1,371 @@
+/* Reset */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Generics */
+
+.debug .border{
+border: 1px solid grey;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+padding-top: 70px;
+
+}
+
+h1{
+font-size: 70px;
+font-weight: 900;
+padding: 50px 0;
+color: black;
+}
+
+h2{
+font-size: 40px;
+font-weight: 600;
+margin: 60px 0;
+color: black;
+}
+
+h3{
+font-size: 23px;
+font-weight: 600;
+color: black;
+margin-bottom: 12px;
+}
+
+h4{
+font-size: 14px;
+font-weight: 600;
+color: black;
+margin-bottom: 30px;
+}
+
+h5{
+font-size: 12px;
+font-weight: 600;
+color: black;
+margin-bottom: 10px;
+}
+
+p, 
+span{
+font-size: 13px;
+}
+
+ul {
+list-style-type: none;
+
+}
+img{
+max-width: 100%;
+}
+
+.icon{
+margin: 15px 5px 15px 0px;
+}
+
+.mb-30{
+margin-bottom: 30px;
+}
+
+.navbar a {
+color: grey;
+text-decoration: none;
+}
+
+/* Utils */
+
+.flex{
+display: flex;
+}
+
+.big-container {
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.small-container {
+max-width: 950px;
+margin: 0 auto;
+}
+
+.bg-lightblue {
+background-color: #b4d0e7;
+}
+
+.bg-black {
+background-color: black;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+.col-20{
+flex-basis: 20%;
+}
+
+.col-30{
+flex-basis: 30%;
+}
+
+.col-50{
+flex-basis: 50%;
+}
+
+.col-70{
+flex-basis: 70%;
+}
+
+.col-33{
+flex-basis: calc(100% / 3);
+min-height: 100px;
+}
+
+/* Buttons */
+
+.btn{
+display: inline-block;
+font-size: 15px;
+padding: 8px 15px;
+border: 0;
+}
+
+.btn.btn-colored{
+background-color: #0261ff;
+color: white;
+}
+
+.btn.btn-bw{
+background-color: white; 
+color: black;
+border: 1px solid black;
+}
+
+.btn.btn-small{
+background-color: white; 
+color: black;
+border: 1px solid black;
+}
+
+.btn.btn-large{
+background-color: white; 
+padding: 8px 50px;
+color: grey;
+
+}
+
+a.btn {
+text-decoration: none;
+}
+
+/* Header */
+
+header{
+background-color: white;
+height: 70px;
+padding: 0 10px;
+box-shadow: 0 1px 1px lightgrey;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+
+/* Navbar */
+
+.navbar{
+height: 100%;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar > * {
+flex-basis: 50%;
+}
+
+#logo{
+height: 25px;
+max-width: 100%;
+display: block; 
+margin-left: 10px;
+cursor: pointer;
+}
+
+.navbar ul {
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+.navbar .navbar-right ul {
+justify-content: flex-end;
+}
+
+.navbar .link a{
+padding: 25px 0;
+}
+
+.navbar .link a:hover{
+border-bottom: 2px solid black;
+}
+
+/* Main */
+
+main{
+height: calc(100vh - 80px);
+overflow-y: auto;
+}
+
+/* Jumbotron */
+
+#jumbotron{
+padding-top: 40px;
+height: 700px;
+}
+
+.fa-arrow-down{
+color: black;
+position: relative;
+top: 70px;
+}
+
+/* Section */
+
+section{
+/* height: 500 px; */
+margin-bottom: 130px;
+color: #464646;
+}
+
+.check{
+height: 20px;
+width: 20px;
+border-radius: 50%;
+display: inline-block;
+vertical-align: middle;
+}
+
+.check.blue{
+border: 5px solid #0261ff;
+}
+
+.check.white{
+border: 2px solid grey
+}
+
+#question .row{
+color: black;
+font-weight: 600;
+height: 100px;
+justify-content: space-between;
+align-items: center;
+}
+
+.nowrap-row {
+margin: 50px 0;
+display: flex;
+gap: 45px;
+}
+
+.fa-angle-down{
+margin-right: 50px;
+cursor: pointer;
+}
+
+#trial .row{
+justify-content: space-between;
+align-items: baseline;
+}
+
+#trial h2{
+color: #61002a;
+margin: 115px 0;
+}
+
+#trial .col-50.right{
+justify-content: flex-end;
+} 
+
+/* Cards */
+
+.top-card{
+text-align: center;
+border-bottom: 1px solid gray;
+}
+
+.bottom-card{
+padding: 30px;
+}
+
+.maxi-card{
+margin-top: 30px;
+}
+
+.bottom-card{
+justify-content:space-between;
+}
+
+.card .btn {
+margin-bottom: 30px;
+}
+
+.card-list li{
+font-size: 13px;
+margin-bottom: 20px;
+}
+
+.col-30.right .btn {
+position: relative;
+left: 70px;
+top: 0px;
+}
+
+.fa-check{
+color:#0261ff;
+font-size: 16px;
+}
+
+/* Footer */
+
+footer{
+background-color: black;
+padding: 50px;
+color: white;
+}
+
+.footer-top{
+height: 370px;
+padding-bottom: 30px;
+border-bottom: 1px solid white;
+}
+
+.footer-bottom{
+height: 45px;
+margin-top: 40px;
+}
+
+.footer-top .col{
+flex-basis: calc(100% / 5);
+}
+
+.navbar-menu a {
+color: white;
+text-decoration: none;
+margin-bottom: 15px;
+display: inline-block
+}
+
+.footer-top li:first-child a{
+font-size: 22px;
+font-weight: bold;
+margin: 35px 0 30px 0; 
+}
